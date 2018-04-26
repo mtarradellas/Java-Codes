@@ -23,4 +23,13 @@ public class Counter {
         return String.valueOf(count);
     }
 
+    @Override
+    public boolean equals(Object o){
+        if(this==o)
+            return true;
+        if(!(o instanceof Counter))
+            return false;
+        Counter counter = (Counter) o;
+        return getCount() == counter.getCount();
+    }
 }

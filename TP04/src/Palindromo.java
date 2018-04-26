@@ -1,10 +1,9 @@
 public class Palindromo {
     public static void main(String[] args){
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for(String w : args){
-            s += w;
+            s.append(s.toLowerCase());
         }
-        s = s.toLowerCase();
         boolean is_palin = checkPalindrome(s);
         if (is_palin){
             System.out.println(":)");
