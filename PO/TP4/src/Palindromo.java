@@ -2,9 +2,9 @@ public class Palindromo {
     public static void main(String[] args){
         StringBuilder s = new StringBuilder();
         for(String w : args){
-            s.append(s.toLowerCase());
+            s.append(w.toLowerCase());
         }
-        boolean is_palin = checkPalindrome(s);
+        boolean is_palin = checkPalindrome(s.toString());
         if (is_palin){
             System.out.println(":)");
         }
