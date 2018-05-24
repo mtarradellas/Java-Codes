@@ -36,10 +36,7 @@ public class SaleUtils {
 
         @Override
         public String toString() {
-            return "SaleSummary{" +
-                    "qty=" + qty +
-                    ", amount=" + amount +
-                    '}';
+            return "SaleSummary{" + "qty=" + qty + ", amount=" + amount + '}';
         }
     }
 
